@@ -1,6 +1,13 @@
 import { Component } from '@angular/core';
 import { Http, Response } from '@angular/http';
 
+interface detailsInterface{
+  name:string;
+  login:string;
+  company:string;
+  url:string;}
+
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
