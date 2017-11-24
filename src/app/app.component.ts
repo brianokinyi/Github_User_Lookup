@@ -10,12 +10,14 @@ export class AppComponent {
 
   constructor(private http:Http){}
   userName='';
+  Details="";
   searchUser(){
   	this.http.get('https://api.github.com/users/'+this.userName).
   	subscribe(
   		(res:Response)=>{
   			const details= res.json();
-  			console.log(details.company);
+  			console.log(details);
+        this.Details=details;
   		}
   		)
   }
