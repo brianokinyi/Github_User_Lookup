@@ -1,33 +1,41 @@
-<div class="container">
+<div class="container-fluid">
   <div id="headerDiv">
     <h2 id="headerTitle">
       GitHub User LookUp
     </h2>
   </div>
-  <hr>
-  <div class="row">
+</div>
+<div class="container">
+  <div class="row" id="searchDiv">
     <div class="col-md-3"></div>
     <div class="col-md-6">
-      <input [(ngModel)]="userName" class="form-control" ><br>
+      <input [(ngModel)]="userName" class="form-control" placeholder="Enter GitHub User"><br>
       <button (click)="searchUser()" class="btn btn-primary" id="searchButton">Search</button>
+      <i class="glyphicon glyphicon-tag"></i>
     </div>
   </div>
   <hr>
   <div class="row">
-  <div class="col-md-6" id="imageCol" > 
-    <img [src]="details.avatar_url" id="userImage"> 
+      <div class="col-md-6 col-sm-6 col-lg-6" id="imageCol" > 
+        <img class="image-responsive" [src]="details.avatar_url" id="userImage"> 
+      </div>
+<!--     <div *ngIf=!"details">
+      <div class="col-md-6" id="imageCol" > 
+        <img src="./../../assets/logo.jpg">
+        <img [src]="details.avatar_url" id="userImage"> 
+      </div>
+   </div> -->
+  <div class="col-md-6" id="otherDetailsColumn">
+     <h5>Name:</h5><h6>{{details.name}}</h6>
+     <h5>User Name:</h5><h6>{{details.login}}</h6>
+     <h5>Company:</h5><h6>{{details.company}}</h6>
+     <h5>Url:</h5><h6>{{details.url}}</h6>
+     <hr>
   </div>
-
-
-  <div class="col-md-6" id="otherDetailsColumn"  >
-     <h5>Name:{{details.name}}</h5>
-     <h5>User Name :{{details.login}}</h5>
-     <h5>Company :{{details.company}}</h5>
-     <h5>Url :{{details.url}}</h5>  
-  </div>
-  </div>
+</div>
   <hr>
-  <div class="row" id="bioRow">
-    <h4>Bio:</h4><p>{{details.bio}}</p>
+  <div class="row">
+    <h4 id="bioRow">Bio:</h4 > &nbsp;&nbsp;&nbsp;
+    <p id="user-bio">{{details.bio}}</p>
   </div>
 </div>

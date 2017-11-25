@@ -1,12 +1,20 @@
 #headerDiv{
-	background-color: blue;
+	background-color: #41B3A4;
 	color: white;
+}
+h5{
+	color: #41B3A4;
 }
 #headerTitle{
 	text-align: center;
+	font-family: 'Lobster', cursive;
+	padding:20px;
 }
 .body{
 	background: url();
+}
+#searchDiv{
+	background-color: white;
 }
 #searchButton{
 	margin-left:225px;
@@ -30,10 +38,20 @@
 #otherDetailsColumn{
 	margin-top: 30px;
 	margin-left: 0px;
+	font-family: Dancing+Script;
+	/*color: gainsboro;*/
 }
 .form-control{
 	text-align: center;
+	margin-top: 10px;
+	/*background-color: #C38D9E;*/
+	/*border-color: white;*/
+	/*background-color: gainsboro;*/
 }
 #bioRow{
 	text-align: center;
+	color: #41B3A4;
 }
+#user-bio {
+	padding-top:3px;
+} 
