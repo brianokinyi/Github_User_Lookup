@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
 import { Http, Response } from '@angular/http';
 
-interface detailsInterface{
-  name:string;
-  login:string;
-  company:string;
-  url:string;}
-
+import { Details } from './details';
 
 @Component({
   selector: 'app-root',
@@ -14,17 +9,19 @@ interface detailsInterface{
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  userName='';
+  avatar_url='';
+  details:Details;
 
   constructor(private http:Http){}
-  userName='';
-  Details="";
+
   searchUser(){
   	this.http.get('https://api.github.com/users/'+this.userName).
   	subscribe(
   		(res:Response)=>{
   			const details= res.json();
   			console.log(details);
-        this.Details=details;
+        this.details=details;
   		}
   		)
   }
