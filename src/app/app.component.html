@@ -15,27 +15,29 @@
     </div>
   </div>
   <hr>
-  <div class="row">
-      <div class="col-md-6 col-sm-6 col-lg-6" id="imageCol" > 
-        <img class="image-responsive" [src]="details.avatar_url" id="userImage"> 
-      </div>
-<!--     <div *ngIf=!"details">
-      <div class="col-md-6" id="imageCol" > 
-        <img src="./../../assets/logo.jpg">
-        <img [src]="details.avatar_url" id="userImage"> 
-      </div>
-   </div> -->
-  <div class="col-md-6" id="otherDetailsColumn">
-     <h5><strong>Name:</strong><span id="detailContent">&nbsp;{{details.name}}</span></h5>
-     <h5><strong>User Name:</strong><span id="detailContent">&nbsp;{{details.login}}</span></h5>
-     <h5><strong>Company:</strong><span id="detailContent">&nbsp;{{details.company}}</span></h5>
-     <h5><strong>Url:</strong><span id="detailContent">&nbsp;{{details.url}}</span></h5>
-     <hr>
+  <div *ngIf=details>
+    <div class="row" >
+        <div class="col-md-6 col-sm-6 col-lg-6" id="imageCol" > 
+          <img class="image-responsive" [src]="details.avatar_url" id="userImage"> 
+        </div>
+  <!--     <div *ngIf=!"details">
+        <div class="col-md-6" id="imageCol" > 
+          <img src="./../../assets/logo.jpg">
+          <img [src]="details.avatar_url" id="userImage"> 
+        </div>
+     </div> -->
+    <div class="col-md-6" id="otherDetailsColumn">
+       <h5><strong>Name:</strong><span id="detailContent">&nbsp;{{details.name}}</span></h5>
+       <h5><strong>User Name:</strong><span id="detailContent">&nbsp;{{details.login}}</span></h5>
+       <h5><strong>Company:</strong><span id="detailContent">&nbsp;{{details.company}}</span></h5>
+       <h5><strong>Url:</strong><span id="detailContent">&nbsp;{{details.url}}</span></h5>
+       <hr>
+    </div>
   </div>
-</div>
-  <hr>
-  <div class="row">
-    <h4 id="bioRow">Bio:</h4 > &nbsp;&nbsp;&nbsp;
-    <p id="user-bio">{{details.bio}}</p>
+    <hr>
+    <div class="row">
+      <h4 id="bioRow">Bio:</h4 > &nbsp;&nbsp;&nbsp;
+      <p id="user-bio">{{details.bio}}</p>
+    </div>
   </div>
 </div>
