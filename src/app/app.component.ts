@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Http, Response } from '@angular/http';
+import { Http, Response} from '@angular/http';
 
 import { Details } from './details';
 
@@ -22,7 +22,13 @@ export class AppComponent {
   			const details= res.json();
   			console.log(details);
         this.details=details;
-  		}
+  		},
+      // (err:HttpErrorResponse) => { if (err.error instanceof Error){
+      //       console.log("Client-side Error occured");
+      //     }
+      //     else{console.log("An error has occured")
+      //       }
+      //     }
   		)
   }
 
