@@ -22,31 +22,19 @@ h5{
 #userImage{
 	height: 200px;
 	width: 200px;
-	border: 4px solid gainsboro;
 	margin-left: 50%;
+	border: 3px solid rgb(219, 219, 219);
+	border-radius: 50%;
 }
-/*#imageCol{
-	margin-left: 10%;
-	border: 2px solid gainsboro;
-	height: 210px;
-	width: 210px;
-	padding-right: 0px;
-	padding-left: 0px;
-	padding-bottom: 0px;	
-}*/
 
 #otherDetailsColumn{
 	margin-top: 30px;
 	margin-left: 0px;
 	font-family: Dancing+Script;
-	/*color: gainsboro;*/
 }
 .form-control{
 	text-align: center;
 	margin-top: 10px;
-	/*background-color: #C38D9E;*/
-	/*border-color: white;*/
-	/*background-color: gainsboro;*/
 }
 #bioRow{
 	text-align: center;
