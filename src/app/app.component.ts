@@ -23,15 +23,6 @@ export class AppComponent {
   			console.log(details);
         this.details=details;
   		},
-      // (err:HttpErrorResponse) => { if (err.error instanceof Error){
-      //       console.log("Client-side Error occured");
-      //     }
-      //     else{console.log("An error has occured")
-      //       }
-      //     }
-  		)
-  }
-
-
-  
+  	)
+  }  
 }
