@@ -31,42 +31,84 @@
       class="col-md-6" 
       id="otherDetailsColumn">
        <h5>
-         <strong>Name:</strong>
-         <span id="detailContent">
-           &nbsp;{{details.name}}
-          </span>
-        </h5>
+         Name
+      </h5>
+      <span id="detailContent">
+        {{details.name}}
+      </span>
        <h5>
-         <strong>User Name:</strong>
-         <span id="detailContent">
-           &nbsp;{{details.login}}
-          </span>
-        </h5>
-       <h5>
-         <strong>Company:</strong>
-         <span id="detailContent">
-           &nbsp;{{details.company}}
-          </span>
-        </h5>
-       <h5>
-         <strong>Url:</strong>
-         <span id="detailContent">
-           &nbsp;{{details.url}}
-          </span>
-        </h5>
-       <hr>
+         User Name
+      </h5>
+      <span id="detailContent">
+        {{details.login}}
+      </span>
+      
+      <h5>
+      Company
+      </h5>
+      <span id="detailContent">
+        {{details.company}}
+      </span>
+     
+      <h5>
+        Email
+      </h5>
+      <span id="detailContent">
+        {{details.email}}
+      </span>
     </div>
   </div>
-    <hr>
-    <div 
-      class="row">
-      <h4 id="bioRow">
-        Bio:
-      </h4 > 
-      &nbsp;&nbsp;&nbsp;
-      <p id="user-bio">
-        {{details.bio}}
-      </p>
-    </div>
+
+  <hr>
+
+  <div>
+    <h5>
+      Url
+    </h5>
+    <span id="detailContent">
+      {{details.url}}
+    </span>
+
+    <h5>
+      Location
+    </h5>
+    <span id="detailContent">
+      {{details.location}}
+    </span>
+
+    <h5>
+      Repositories
+    </h5>
+    <span id="detailContent">
+      {{details.public_repos}}
+    </span>
+
+    <h5>
+      Followers
+    </h5>
+    <span id="detailContent">
+      {{details.followers}}
+    </span>
+
+    <h5>
+      Following
+    </h5>
+    <span id="detailContent">
+      {{details.following}}
+    </span>
+
+    <h5>
+      Created at
+    </h5>
+    <span id="detailContent">
+      {{details.created_at}}
+    </span>
+
+    <h5>
+      Bio
+    </h5>
+    <p id="user-bio">
+      {{details.bio}}
+    </p>
   </div>
 </div>
